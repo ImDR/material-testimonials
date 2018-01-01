@@ -53,36 +53,12 @@ function mattesti_doc_page_callback(){
 					<td>Integer (default 3)</td>
 				</tr>
 				<tr>
-					<td><b>nav</b></td>
-					<td>true (default), false</td>
-				</tr>
-				<tr>
-					<td><b>loop</b></td>
-					<td>true (default), false</td>
-				</tr>
-				<tr>
 					<td><b>margin</b></td>
 					<td>Integer (default 15)</td>
 				</tr>
 				<tr>
-					<td><b>autoplay</b></td>
-					<td>true (default), false</td>
-				</tr>
-				<tr>
 					<td><b>speed</b></td>
 					<td>Milliseconds (default 5000)</td>
-				</tr>
-				<tr>
-					<td><b>hoverPause</b></td>
-					<td>true (default), false</td>
-				</tr>
-				<tr>
-					<td><b>drag</b></td>
-					<td>true (default), false</td>
-				</tr>
-				<tr>
-					<td><b>dots</b></td>
-					<td>true (default), false</td>
 				</tr>
 				<tr>
 					<td><b>controlColor</b></td>
@@ -100,6 +76,33 @@ function mattesti_doc_page_callback(){
 					<td><b>orderby</b></td>
 					<td>date (default), title, rand, menu_order</td>
 				</tr>
+				<tr>
+					<td><b>nav</b></td>
+					<td>true (default), false</td>
+				</tr>
+				<tr>
+					<td><b>loop</b></td>
+					<td>true (default), false</td>
+				</tr>
+				
+				<tr>
+					<td><b>autoplay</b></td>
+					<td>true (default), false</td>
+				</tr>
+				
+				<tr>
+					<td><b>hoverPause</b></td>
+					<td>true (default), false</td>
+				</tr>
+				<tr>
+					<td><b>drag</b></td>
+					<td>true (default), false</td>
+				</tr>
+				<tr>
+					<td><b>dots</b></td>
+					<td>true (default), false</td>
+				</tr>
+				
 				<tr>
 					<td colspan="2" style="text-align: center;"><hr><h3>Demo</h3></td>
 				</tr>
