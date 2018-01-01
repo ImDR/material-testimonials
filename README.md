@@ -4,16 +4,22 @@ Shortcode: **[material-testimonials]**
 
 ## Options
 
-| Options        | Value           | Default  |
-| ------------- |:-------------:| -----:|
-| style      | style1, style2, style3, style4 | `style1` |
-| items     | Integer      |   `3` |
-| nav |true, false      |   `true` |
-|loop|true, false      |   `true` |
-|autoplay|true, false      |   `true` |
-|hoverPause|true, false      |   `true` |
-|drag|true, false      |   `true` |
-|dots|true, false      |   `true` |
+| Options             | Value                          | Default  |
+| ------------------- |:------------------------------:| --------:|
+| style               | style1, style2, style3, style4 | `style1` |
+| items               | Integer                        | `3`      |
+| margin              | Integer                        | `15`     |
+| speed               | Milliseconds                   | `5000`   |
+| controlColor        |	color                          | `#c1c1c1`|
+| controlActiveColor  |	color                          | `#212121`|
+| order	              |	DESC, ASC                      | `DESC`   |
+| orderby             | date, title, rand, menu_order  | `date`   |
+| nav                 |true, false                     |   `true` |
+| loop                |true, false                     |   `true` |
+| autoplay            |true, false                     |   `true` |
+| hoverPause          |true, false                     |   `true` |
+| drag                |true, false                     |   `true` |
+| dots                |true, false                     |   `true` |
 
 
 Style 1: 
