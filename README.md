@@ -1,6 +1,6 @@
 # Material Testimonials
 
-Shortcode: [material-testimonials]
+Shortcode: **[material-testimonials]**
 
 Style 1: 
 ![alt text](https://raw.githubusercontent.com/ImDR/material-testimonials/master/img/style1.jpg "Material Testimonials Style 1")
