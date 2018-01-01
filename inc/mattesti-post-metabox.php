@@ -90,9 +90,9 @@ function mattesti_meta_box_ctr(){
 }
 
 
-add_action('save_post','mt_meta_box_save',10,2);
+add_action('save_post','mattesti_meta_box_save',10,2);
 
-function mt_meta_box_save($post_id, $post){
+function mattesti_meta_box_save($post_id, $post){
 	if(!isset($_POST['mattesti_meta_box_nonce'])|| !wp_verify_nonce($_POST['mattesti_meta_box_nonce'], basename(__FILE__)))
 		return $post_id;
 	
@@ -101,14 +101,14 @@ function mt_meta_box_save($post_id, $post){
 
 
 	if(get_post_type($post_id)=='testimonials'){
-		update_post_meta($post_id, 'mt-facebook-url', sanitize_text_field($_POST['mt-facebook-url']));
-		update_post_meta($post_id, 'mt-twitter-url', sanitize_text_field($_POST['mt-twitter-url']));
-		update_post_meta($post_id, 'mt-linkedin-url', sanitize_text_field($_POST['mt-linkedin-url']));
-		update_post_meta($post_id, 'mt-instagram-url', sanitize_text_field($_POST['mt-instagram-url']));
-		update_post_meta($post_id, 'mt-sub-title', sanitize_text_field($_POST['mt-sub-title']));
+		update_post_meta($post_id, 'mattesti-facebook-url', sanitize_text_field($_POST['mattesti-facebook-url']));
+		update_post_meta($post_id, 'mattesti-twitter-url', sanitize_text_field($_POST['mattesti-twitter-url']));
+		update_post_meta($post_id, 'mattesti-linkedin-url', sanitize_text_field($_POST['mattesti-linkedin-url']));
+		update_post_meta($post_id, 'mattesti-instagram-url', sanitize_text_field($_POST['mattesti-instagram-url']));
+		update_post_meta($post_id, 'mattesti-sub-title', sanitize_text_field($_POST['mattesti-sub-title']));
 		
-		update_post_meta($post_id, 'mt-bg-color', sanitize_text_field($_POST['mt-bg-color']));
-		update_post_meta($post_id, 'mt-text-color', sanitize_text_field($_POST['mt-text-color']));
+		update_post_meta($post_id, 'mattesti-bg-color', sanitize_text_field($_POST['mattesti-bg-color']));
+		update_post_meta($post_id, 'mattesti-text-color', sanitize_text_field($_POST['mattesti-text-color']));
 	}
 }
 

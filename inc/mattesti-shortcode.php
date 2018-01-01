@@ -62,35 +62,35 @@ function mattesti_shortcode_handler( $atts ) {
 				?>
 					<div class="item">
 						<?php if($arr['style']=='style4'){ ?>
-							<div class="testimonial style4 shadow" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mt-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mt-text-color', true)); ?>;">
+							<div class="testimonial style4 shadow" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-text-color', true)); ?>;">
 								<div class="testimonial-wrapper">
 									<div class="testimonial-image">
-										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MT_PLUGIN.'img/default1.png'; ?>">
+										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MATTESTI_PLUGIN.'img/default1.png'; ?>">
 									</div>
 									<div class="testimonial-col">
 										<p class="testimonial-title"><b><?php the_title(); ?></b></p>
-										<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mt-sub-title', true)); ?></i></p>
-										<ul class="mt-social-icons">
+										<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mattesti-sub-title', true)); ?></i></p>
+										<ul class="mattesti-social-icons">
 											<?php
-											if($facebook_url = esc_url(get_post_meta($post_id, 'mt-facebook-url', true))){
+											if($facebook_url = esc_url(get_post_meta($post_id, 'mattesti-facebook-url', true))){
 												?>
 												<li><a target="_blank" href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook"></i></a></li>
 												<?php
 											}
 											
-											if($twitter_url = esc_url(get_post_meta($post_id, 'mt-twitter-url', true))){
+											if($twitter_url = esc_url(get_post_meta($post_id, 'mattesti-twitter-url', true))){
 												?>
 												<li><a target="_blank" href="<?php echo $twitter_url; ?>"><i class="fa fa-twitter"></i></a></li>
 												<?php
 											}
 											
-											if($linkedin_url = esc_url(get_post_meta($post_id, 'mt-linkedin-url', true))){
+											if($linkedin_url = esc_url(get_post_meta($post_id, 'mattesti-linkedin-url', true))){
 												?>
 												<li><a target="_blank" href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin"></i></a></li>
 												<?php
 											}
 
-											if($instagram_url = esc_url(get_post_meta($post_id, 'mt-instagram-url', true))){
+											if($instagram_url = esc_url(get_post_meta($post_id, 'mattesti-instagram-url', true))){
 												?>
 												<li><a target="_blank" href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram"></i></a></li>
 												<?php
@@ -102,34 +102,34 @@ function mattesti_shortcode_handler( $atts ) {
 								<div class="testimonial-content"><?php the_content(); ?></div>
 							</div>
 						<?php }elseif($arr['style']=='style3'){ ?>
-							<div class="testimonial style3 shadow" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mt-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mt-text-color', true)); ?>;">
+							<div class="testimonial style3 shadow" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-text-color', true)); ?>;">
 								<div class="testimonial-wrapper-col1">
 									<div class="testimonial-image">
-										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MT_PLUGIN.'img/default1.png'; ?>">
+										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MATTESTI_PLUGIN.'img/default1.png'; ?>">
 									</div>
 									<p class="testimonial-title"><b><?php the_title(); ?></b></p>
-									<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mt-sub-title', true)); ?></i></p>
-									<ul class="mt-social-icons">
+									<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mattesti-sub-title', true)); ?></i></p>
+									<ul class="mattesti-social-icons">
 										<?php
-										if($facebook_url = esc_url(get_post_meta($post_id, 'mt-facebook-url', true))){
+										if($facebook_url = esc_url(get_post_meta($post_id, 'mattesti-facebook-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook"></i></a></li>
 											<?php
 										}
 										
-										if($twitter_url = esc_url(get_post_meta($post_id, 'mt-twitter-url', true))){
+										if($twitter_url = esc_url(get_post_meta($post_id, 'mattesti-twitter-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $twitter_url; ?>"><i class="fa fa-twitter"></i></a></li>
 											<?php
 										}
 										
-										if($linkedin_url = esc_url(get_post_meta($post_id, 'mt-linkedin-url', true))){
+										if($linkedin_url = esc_url(get_post_meta($post_id, 'mattesti-linkedin-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin"></i></a></li>
 											<?php
 										}
 
-										if($instagram_url = esc_url(get_post_meta($post_id, 'mt-instagram-url', true))){
+										if($instagram_url = esc_url(get_post_meta($post_id, 'mattesti-instagram-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram"></i></a></li>
 											<?php
@@ -143,34 +143,34 @@ function mattesti_shortcode_handler( $atts ) {
 							</div>
 						<?php }elseif($arr['style']=='style2'){ ?>	
 							<div class="testimonial style2" >
-								<div class="shadow testimonial-wrapper" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mt-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mt-text-color', true)); ?>;">
+								<div class="shadow testimonial-wrapper" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-text-color', true)); ?>;">
 									<div class="testimonial-image">
-										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MT_PLUGIN.'img/default1.png'; ?>">
+										<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MATTESTI_PLUGIN.'img/default1.png'; ?>">
 									</div>
 									<div class="testimonial-content"><?php the_content(); ?></div>
 									<p class="testimonial-title"><b><?php the_title(); ?></b></p>
-									<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mt-sub-title', true)); ?></i></p>
-									<ul class="mt-social-icons">
+									<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mattesti-sub-title', true)); ?></i></p>
+									<ul class="mattesti-social-icons">
 										<?php
-										if($facebook_url = esc_url(get_post_meta($post_id, 'mt-facebook-url', true))){
+										if($facebook_url = esc_url(get_post_meta($post_id, 'mattesti-facebook-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook"></i></a></li>
 											<?php
 										}
 										
-										if($twitter_url = esc_url(get_post_meta($post_id, 'mt-twitter-url', true))){
+										if($twitter_url = esc_url(get_post_meta($post_id, 'mattesti-twitter-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $twitter_url; ?>"><i class="fa fa-twitter"></i></a></li>
 											<?php
 										}
 										
-										if($linkedin_url = esc_url(get_post_meta($post_id, 'mt-linkedin-url', true))){
+										if($linkedin_url = esc_url(get_post_meta($post_id, 'mattesti-linkedin-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin"></i></a></li>
 											<?php
 										}
 
-										if($instagram_url = esc_url(get_post_meta($post_id, 'mt-instagram-url', true))){
+										if($instagram_url = esc_url(get_post_meta($post_id, 'mattesti-instagram-url', true))){
 											?>
 											<li><a target="_blank" href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram"></i></a></li>
 											<?php
@@ -181,34 +181,34 @@ function mattesti_shortcode_handler( $atts ) {
 								
 							</div>
 						<?php }else{ ?>
-							<div class="shadow testimonial style1" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mt-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mt-text-color', true)); ?>;">
+							<div class="shadow testimonial style1" style="background-color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-bg-color', true)) ?>; color: <?php echo esc_attr(get_post_meta($post_id, 'mattesti-text-color', true)); ?>;">
 								<div class="testimonial-image">
-									<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MT_PLUGIN.'img/default1.png'; ?>">
+									<img src="<?php echo (has_post_thumbnail())? get_the_post_thumbnail_url($post_id): MATTESTI_PLUGIN.'img/default1.png'; ?>">
 								</div>
 								<div class="testimonial-content"><?php the_content(); ?></div>
 								<p class="testimonial-title"><b><?php the_title(); ?></b></p>
-								<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mt-sub-title', true)); ?></i></p>
-								<ul class="mt-social-icons">
+								<p class="testimonial-subtitle"><i><?php echo esc_attr(get_post_meta($post_id, 'mattesti-sub-title', true)); ?></i></p>
+								<ul class="mattesti-social-icons">
 									<?php
-									if($facebook_url = esc_url(get_post_meta($post_id, 'mt-facebook-url', true))){
+									if($facebook_url = esc_url(get_post_meta($post_id, 'mattesti-facebook-url', true))){
 										?>
 										<li><a target="_blank" href="<?php echo $facebook_url; ?>"><i class="fa fa-facebook"></i></a></li>
 										<?php
 									}
 									
-									if($twitter_url = esc_url(get_post_meta($post_id, 'mt-twitter-url', true))){
+									if($twitter_url = esc_url(get_post_meta($post_id, 'mattesti-twitter-url', true))){
 										?>
 										<li><a target="_blank" href="<?php echo $twitter_url; ?>"><i class="fa fa-twitter"></i></a></li>
 										<?php
 									}
 									
-									if($linkedin_url = esc_url(get_post_meta($post_id, 'mt-linkedin-url', true))){
+									if($linkedin_url = esc_url(get_post_meta($post_id, 'mattesti-linkedin-url', true))){
 										?>
 										<li><a target="_blank" href="<?php echo $linkedin_url; ?>"><i class="fa fa-linkedin"></i></a></li>
 										<?php
 									}
 
-									if($instagram_url = esc_url(get_post_meta($post_id, 'mt-instagram-url', true))){
+									if($instagram_url = esc_url(get_post_meta($post_id, 'mattesti-instagram-url', true))){
 										?>
 										<li><a target="_blank" href="<?php echo $instagram_url; ?>"><i class="fa fa-instagram"></i></a></li>
 										<?php
