@@ -1,6 +1,6 @@
 # Material Testimonials
 
-Shortcode: `**[material-testimonials]**`
+Shortcode: **[material-testimonials]**
 
 ## Options
 
@@ -9,6 +9,11 @@ Shortcode: `**[material-testimonials]**`
 | style      | style1, style2, style3, style4 | `style1` |
 | items     | Integer      |   `3` |
 | nav |true, false      |   `true` |
+|loop|true, false      |   `true` |
+|autoplay|true, false      |   `true` |
+|hoverPause|true, false      |   `true` |
+|drag|true, false      |   `true` |
+|dots|true, false      |   `true` |
 
 
 Style 1: 
