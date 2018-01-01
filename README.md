@@ -2,6 +2,15 @@
 
 Shortcode: **[material-testimonials]**
 
+## Options
+
+| Options        | Value           | Default  |
+| ------------- |:-------------:| -----:|
+| style      | style1, style2, style3, style4 | `style1` |
+| items     | Integer      |   `3` |
+| nav |true, false      |   `true` |
+
+
 Style 1: 
 ![alt text](https://raw.githubusercontent.com/ImDR/material-testimonials/master/img/style1.jpg "Material Testimonials Style 1")
 
