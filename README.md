@@ -1,6 +1,6 @@
 # Material Testimonials
 
-Shortcode: **[material-testimonials]**
+Shortcode: `**[material-testimonials]**`
 
 ## Options
 
